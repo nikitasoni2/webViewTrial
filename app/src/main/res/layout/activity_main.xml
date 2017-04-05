@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="rbsl.e_iq.MainActivity">
+<Button
+    android:layout_width="wrap_content"
+    android:text="Flipkart"
+    android:textAllCaps="false"
+    android:id="@+id/flipkart"
+    android:layout_height="wrap_content" />
+  <Button
+      android:layout_width="wrap_content"
+      android:text="Amazone"
+      android:id="@+id/amazone"
+      android:textAllCaps="false"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_toRightOf="@+id/flipkart"
+      android:layout_toEndOf="@+id/flipkart" />
+  <Button
+      android:text="snapdeal"
+      android:id="@+id/snapdeal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_toRightOf="@+id/amazone"
+      android:layout_toEndOf="@+id/amazone" />
+  <Button
+      android:text="google"
+      android:id="@+id/google"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_toRightOf="@+id/snapdeal"
+      android:layout_toEndOf="@+id/snapdeal" />
+  <WebView
+      android:layout_width="match_parent"
+      android:id="@+id/web_iq"
+      android:layout_below="@+id/amazone"
+      android:layout_height="match_parent">
+
+  </WebView>
+</RelativeLayout>
